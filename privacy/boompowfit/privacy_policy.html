@@ -80,5 +80,5 @@ We may update this Privacy Policy from time to time. We will update the Effectiv
 If you have questions about this Privacy Policy, contact:
 
 - Company: BoomPowApps
-- Email: privacy@boompowapps.com
+- Email: boompowapps@me.com
 
