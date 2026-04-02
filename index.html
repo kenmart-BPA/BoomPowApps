@@ -330,10 +330,27 @@
 
     .footer-links a:hover { color: var(--accent); }
 
+    /* ── Banner ── */
+    .site-banner {
+      width: 100%;
+      display: block;
+      line-height: 0;
+    }
+
+    .site-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 320px;
+      object-fit: cover;
+      object-position: center;
+    }
+
     /* ── Mobile ── */
     @media (max-width: 600px) {
       nav { padding: 16px 20px; }
       .hero { padding: 64px 20px 56px; }
+      .site-banner img { max-height: 160px; }
       footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -348,6 +365,11 @@
     </a>
     <a class="nav-link" href="mailto:hello@boompowapps.com">Contact</a>
   </nav>
+
+  <!-- Banner -->
+  <div class="site-banner">
+    <img src="/images/banner.png" alt="BoomPowApps — BoomPowFit and BoomNote" width="1280" height="480">
+  </div>
 
   <!-- Hero -->
   <section class="hero">
