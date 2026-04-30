@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BoomPowApps</title>
-  <meta name="description" content="Simple, focused apps for iPhone. Built by BoomPowApps.">
+  <meta name="description" content="Simple, focused apps for iPhone and Mac. Built by BoomPowApps.">
   <style>
     :root {
       --bg:        #f5f5f7;
@@ -176,9 +176,10 @@
       border: 1px solid var(--border);
     }
 
-    .app-icon.boomnote    { background: #FFD60A; }
-    .app-icon.boomfit     { background: #30D158; }
+    .app-icon.boomnote      { background: #FFD60A; }
+    .app-icon.boomfit       { background: #30D158; }
     .app-icon.boomplatemath { background: #2C2C2E; }
+    .app-icon.boommarkdown  { background: #4F8A6B; }
 
     .app-meta h2 {
       font-size: 18px;
@@ -237,6 +238,18 @@
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 4px 10px;
+    }
+
+    .badge-platform {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--secondary);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3px 9px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
     }
 
     /* ── Divider ── */
@@ -376,13 +389,33 @@
   <section class="hero">
     <p class="hero-eyebrow">BoomPowApps</p>
     <h1>Simple apps.<br>No fluff.</h1>
-    <p>Small, focused iPhone apps built to do one thing well and get out of your way.</p>
+    <p>Small, focused apps for iPhone and Mac. Built to do one thing well and get out of your way.</p>
   </section>
 
   <!-- Apps -->
   <section class="section">
     <p class="section-label">Apps</p>
     <div class="apps-grid">
+
+      <!-- BoomMarkDown -->
+      <div class="app-card">
+        <div class="app-card-header">
+          <div class="app-icon boommarkdown">✍️</div>
+          <div class="app-meta">
+            <h2>BoomMarkDown</h2>
+            <p class="app-category">Developer Tools &mdash; Mac</p>
+          </div>
+        </div>
+        <p class="app-description">
+          Write App Store descriptions, release notes, and keywords in Markdown.
+          Live field-limit validation, keyword byte counting, and one-tap clean plain-text copy for App Store Connect.
+        </p>
+        <div class="app-footer">
+          <a class="btn btn-primary" href="https://apps.apple.com/app/id6745102027" target="_blank" rel="noopener">↓ Mac App Store</a>
+          <a class="btn btn-secondary" href="/privacy/boommarkdown/">Privacy</a>
+          <span class="badge-platform">macOS</span>
+        </div>
+      </div>
 
       <!-- BoomNote -->
       <div class="app-card">
@@ -477,6 +510,7 @@
   <footer>
     <p>&copy; 2026 BoomPowApps. All rights reserved.</p>
     <div class="footer-links">
+      <a href="/privacy/boommarkdown/">BoomMarkDown Privacy</a>
       <a href="/privacy/boomnote/privacy-policy.html">BoomNote Privacy</a>
       <a href="/privacy/boompowfit/privacy_policy.html">BoomPowFit Privacy</a>
       <a href="/privacy/boomplatemath/privacy_policy.html">Boom Plate Math Privacy</a>
